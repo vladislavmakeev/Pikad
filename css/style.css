@@ -1,0 +1,343 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	background: #e5e5e5;
+}
+.header {
+	background: #fa8c16;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+	margin-bottom: 30px;
+}
+.header-wrapper {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-nav {
+	margin-left: 60px;
+	margin-right: auto;
+}
+.header-menu {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.header-menu-link {
+	text-decoration: none;
+	color: #fafafa;
+	margin-right: 15px;
+	font-size: 14px;
+	line-height: 22px;
+}
+.input-group {
+	width: 237px;
+	height: 32px;
+	position: relative;
+	background: #ffffff;
+	border-radius: 4px;
+	overflow: hidden;
+	border: 1px solid #d9d9d9;
+}
+.search-input {
+	padding-left: 12px;
+	border: none;
+	width: 80%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 22px;
+}
+.search-button {
+	height: 100%;
+	width: 20%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+   .search-input::-moz-placeholder {color: #BFBFBF; }
+   .search-input::-webkit-input-placeholder { color: #BFBFBF; }
+   .search-input::-ms-input-placeholder { color: #BFBFBF; }
+   .search-input::-ms-input-placeholder { color: #BFBFBF; }
+   .search-input::placeholder { color: #BFBFBF; } 
+
+.menu-toggle {
+	display: none;
+}
+
+.content {
+   	min-width: 1200px;
+   	width: 90%;
+   	margin: auto;
+   	display: flex;
+   	align-items: flex-start;
+   	justify-content: space-between;
+}
+.posts {
+	width: 67%;
+}
+.post {
+	background-color: #FFF;
+	border: 1px solid #e8e8e8;
+	margin-bottom: 30px;
+}
+.post-body {
+	padding-left: 35px;
+	padding-top: 35px;
+	padding-right: 35px;
+	padding-bottom: 0;
+}
+.post-title {
+	margin-top: 0;
+	margin-bottom: 19px;
+}
+.tags {
+	margin-bottom: 22px;
+}
+.tag {
+	color: #BFBFBF;
+	font-size: 14px;
+	line-height: 22px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+.post-footer {
+	background: #FAFAFA;
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.post-buttons {
+	display: flex;
+	align-items: center;
+}
+.post-button .icon {
+	fill: #8c8c8c;
+}
+.icon-like, .icon-comment {
+	margin-right: 6px;
+}
+.post-button {
+    background: transparent;
+    border: none;
+    color: #8c8c8c;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 19px;
+    cursor: pointer;
+}
+.post-author {
+	display: flex;
+	align-items: center;
+	text-align: right;
+}
+.author-avatar {
+	width: 34px;
+	height: 34px;
+	margin-left: 9px;
+	border-radius: 4px;
+}
+.author-username {
+	display: block;
+	color: #8c8c8c;
+	font-size: 12px;
+	line-height: 20px;
+	text-decoration: none;
+}
+.post-time {
+	color: #bfbfbf;
+	font-size: 12px;
+	line-height: 20px;
+}
+.icon-like, .icon-comment {
+	margin-right: 6px;
+} 
+
+.sidebar {
+	width: 31%;
+}
+.user {
+	background-color: #fafafa;
+	border: 1px solid #E8E8E8;
+	padding: 15px 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.user-info {
+	display: flex;
+	align-items: center;
+}
+.user-avatar {
+	border-radius: 50%;
+	margin-right: 17px;
+}
+.user-name {
+	font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+}
+.icon-exit {
+	width: 20px;
+	height: 20px;
+	fill: #000;
+}
+.sidebar-nav {
+	background-color: #fff;
+}
+.sidebar-menu {
+	margin: 0;
+	border: 1px solid #e8e8e8;
+	border-top: none;
+	list-style: none;
+	padding: 0;
+}
+.sidebar-menu-link {
+	text-decoration: none;
+	font-style: normal;
+	font-weight: normal;
+	font-style: 14px;
+	line-height: 22px;
+	color: #595959;
+	padding: 16px 48px;
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+}
+.sidebar-menu-link:hover {
+	background-color: #fffbe6;
+}
+.sidebar-menu-link.active {
+	background-color: #fffbe6;
+	border-right: 3px solid #FAAD14;
+}
+.button {
+	background: #faad14;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #ffffff;
+	font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px;
+}
+.button-new-post {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.icon-fire {
+	fill: #fff;
+	width: 11px;
+	height: 13px;
+	margin-right: 10px;
+}
+.card {
+	background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    margin-top: 20px;
+}
+.card-header {
+    background: #FAFAFA;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 23px 25px;
+}
+.card-title {
+	margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+}
+.card-body {
+	padding: 22px 40px 20px 25px;
+}
+.card-body-title {
+	text-decoration: none;
+	margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D48806;
+}
+.card-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    margin: 10px 0;
+}
+.promo {
+	background: #fff  url('../img/advertising.jpg') no-repeat center center / cover;
+	width: 100%;
+	height: 260px;
+	border: 1px solid #e8e8e8;
+	margin-top: 20px;
+	position: relative;
+} 
+.promo::before {
+	content: "Реклама";
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #c4c4c4;
+	padding-left: 26px;
+	padding-right: 26px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #ffffff;
+}
+@media (max-width: 990px) {
+	.menu-toggle {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 30px;
+		height: 20px;
+		margin-left: 12px;
+	}
+	.menu-toggle span {
+		height: 2px;
+		width: 100%;
+		background-color: #fff;
+	}
+	.sidebar {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%; 
+		width: 320px;
+	}
+	.sidebar .visible {
+		display: block;
+	}
+	.posts {
+		width: 100%;
+	}
+}
